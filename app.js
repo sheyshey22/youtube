@@ -8,7 +8,6 @@ let app = {
       selectedVideo: null,
       searchTerm: "iPhone X"
    },
-
    init: function() {
       app.youtubeSearch("iPhone X");
       app.search();
