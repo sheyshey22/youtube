@@ -73,7 +73,10 @@ let app = {
          var list = app.getVideoList(app.result.videos);
          console.log("lis: ", list);
          $("#root").append(list);
+         $('#videoPlay').append(contenedor)
       });
    }
 };
+
+
 $(document).ready(app.init());
