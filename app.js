@@ -1,5 +1,4 @@
 "use strict";
-
 const API_KEY = "AIzaSyB6RQPxv-X6aojxx9IKh0Nc4twyqlMnitI";
 
 let app = {
@@ -77,5 +76,4 @@ let app = {
       });
    }
 };
-
 $(document).ready(app.init());
