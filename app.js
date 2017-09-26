@@ -11,7 +11,7 @@ let app = {
 
    init: function() {
       app.youtubeSearch("iPhone X");
-      app.setup();
+      app.search();
    },
    search: function () {
       $('#search').keyup(function(e) {
@@ -22,7 +22,6 @@ let app = {
          }
       });
       },
-   //<iframe className="embed-responsive-item" src={url}> </iframe>
    getVideoList: function(videos) {
       return videos.map((video, index) => {
          const imageUrl = video.snippet.thumbnails.default.url;
@@ -80,6 +79,4 @@ let app = {
    }
 };
 
-$(document).ready(function() {
-   app.init();
-});
+$(document).ready(app.init());
